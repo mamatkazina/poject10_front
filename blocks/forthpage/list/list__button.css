@@ -1,0 +1,14 @@
+.list__button {
+  height: 50px;
+  background-color: rgba(30, 39, 44, 0.9);
+  border: none;
+  border-bottom: 2px solid #db8b5b;
+  margin-bottom: 0px;
+  margin-top: 0;
+  opacity: 1;
+  width: 100%;
+  font-size: 22px;
+  color: white;
+  margin-right: 15px;
+  text-align: left;
+}

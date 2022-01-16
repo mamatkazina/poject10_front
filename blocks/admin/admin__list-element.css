@@ -1,0 +1,19 @@
+.admin__list-element {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #db8b5b;
+  height: 32px;
+}
+
+.admin__list-element:hover > button {
+  display: block;
+  cursor: pointer;
+}
+
+.admin__list-element:hover > span {
+  color: #db8b5b;
+}
+
+.admin__list-element:hover {
+  cursor: pointer;
+}

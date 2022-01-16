@@ -1,0 +1,29 @@
+.submit {
+  width: 100%;
+  font-size: 18px;
+  color: white;
+
+  box-sizing: border-box;
+  border: 5px solid #db8b5b;
+  background-color: #db8b5b;
+  border-radius: 45px;
+  margin: 0px 0 39px 0;
+  padding: 0 0 0 0px;
+  width: 350px;
+
+  height: 60px;
+  transition: opacity 0.5s linear;
+}
+
+@media all and (min-width: 1024px) {
+  .submit {
+    font-size: 24px;
+    height: 70px;
+    width: 403px;
+  }
+}
+
+.submit :hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

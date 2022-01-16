@@ -1,0 +1,12 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 53% 1fr;
+    gap: 24px;
+  }
+}

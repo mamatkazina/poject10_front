@@ -1,0 +1,7 @@
+@media all and (min-width: 768px) {
+  .polling__image {
+    background: url(../../../images/moscow3.jpg) top right no-repeat;
+    background-size: contain;
+    height: 80vh;
+  }
+}

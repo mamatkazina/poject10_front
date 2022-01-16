@@ -1,0 +1,11 @@
+.menu__button {
+  height: 90px;
+  background-color: rgba(30, 39, 44, 0.9);
+  border: none;
+  border-bottom: 3px dotted white;
+  opacity: 1;
+  width: 100%;
+  width: 100%;
+  font-size: 30px;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.list__button {
+  height: 35px;
+  background-color: rgba(30, 39, 44, 0.9);
+  border: 0px solid #1e272c;
+  margin-bottom: 0px;
+  margin-top: 0;
+  opacity: 1;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+}
+
+/* .list__button:focus {
+  color: #db8b5b;
+} */

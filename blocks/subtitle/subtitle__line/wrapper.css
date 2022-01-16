@@ -1,0 +1,9 @@
+.wrapper {
+  align-self: center;
+  width: 161px;
+}
+@media all and (min-width: 768px) {
+  .wrapper {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,7 @@
+.map__button_back {
+  background: url(../../images/стрелочка2.png) no-repeat center;
+  background-size: 45px;
+  background-color: #1e272c;
+  border: 2px solid #1e272c;
+  border-radius: 45px;
+}

@@ -1,0 +1,14 @@
+.header__block {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  /* align-content: space-between;
+  width: 100%; */
+}
+
+/* @media all and (min-width: 1024px) {
+  .header__block {
+    display: 55%;
+  }
+} */

@@ -1,0 +1,14 @@
+.polling__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .polling__block {
+    display: 55%;
+  }
+}

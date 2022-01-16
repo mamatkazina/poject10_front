@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>школьный проект</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body class="main-page">
+    <header class="header main-page__header">
+      <div class="header__block">
+        <h1 class="header__title">Walking in Moscow</h1>
+        <p class="header__subtitle">
+          Мы сделаем твои прогулки по гроду еще интереснее и увлекательнее!
+        </p>
+        <button type="button" class="header__button">Подробнее</button>
+      </div>
+
+      <div class="header__image"></div>
+    </header>
+
+    <main>
+      <section class="about main-page__about">
+        <div class="subtitle">
+          <h2 class="subtitle__title-H2">Почему мы?</h2>
+          <div class="wrapper">
+            <hr class="subtitle__line subtitle__line_short" />
+          </div>
+        </div>
+
+        <ul class="about__list">
+          <li class="about__item">
+            <img
+              class="about__image"
+              src="./images/free-icon-heart-146811.png"
+            />
+            <p class="about__description">
+              Отметь свои “любимые места” на карте
+            </p>
+          </li>
+
+          <li class="about__item">
+            <img
+              class="about__image"
+              src="./images/free-icon-arrow-with-scribble-64850.png"
+            />
+            <p class="about__description">
+              Посмотри по карте, каким путем ты сегодня шёл
+            </p>
+          </li>
+
+          <li class="about__item">
+            <img
+              class="about__image"
+              src="./images/free-icon-spinning-arrows-65378.png"
+            />
+            <p class="about__description">
+              Найди свой любимый “тематический маршрут”
+            </p>
+          </li>
+
+          <li class="about__item">
+            <img
+              class="about__image"
+              src="./images/free-icon-speech-bubble-146802.png"
+            />
+            <p class="about__description">
+              Напиши заметку, чтобы не потерять адресс
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-page__outline">
+        <div class="outline"></div>
+      </section>
+
+      <section class="polling main-page__polling">
+        <div class="polling__block">
+          <div class="subtitle">
+            <h2 class="subtitle__title-H2">Walking in Moscow</h2>
+            <div class="wrapper">
+              <hr class="subtitle__line subtitle__line_short" />
+            </div>
+          </div>
+
+          <form name="form" class="polling__form">
+            <!-- <input
+              type="text"
+              class="input header__login"
+              name="login"
+              placeholder="Логин"
+              required
+              value=""
+            />
+            <input
+              type="text"
+              class="input polling__password"
+              name="password"
+              placeholder="Пароль"
+              required
+              value=""
+            /> -->
+            <button
+              formaction="./pages/page2.html"
+              type="submit"
+              class="polling__submit admin"
+            >
+              Зайти
+            </button>
+            <button
+              formaction="./pages/page1.html"
+              type="submit"
+              class="polling__submit move"
+            >
+              Подробнее
+            </button>
+          </form>
+        </div>
+
+        <div class="polling__image"></div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

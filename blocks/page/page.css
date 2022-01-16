@@ -1,0 +1,11 @@
+.page {
+  min-width: 320px;
+  max-width: 1280px;
+  margin: auto;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  background-color: #1e272c;
+  /* display: flex; */
+  /* display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr 1fr; */
+}

@@ -1,0 +1,9 @@
+.list__element {
+  width: 100%;
+}
+
+.list__element:last-of-type {
+  margin-bottom: 10px;
+}
+
+

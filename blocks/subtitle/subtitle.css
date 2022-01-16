@@ -1,0 +1,9 @@
+.subtitle {
+  display: block;
+  margin-bottom: 80px;
+}
+@media all and (min-width: 1024px) {
+  .subtitle {
+    margin-bottom: 120px;
+  }
+}

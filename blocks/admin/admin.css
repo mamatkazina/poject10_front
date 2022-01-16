@@ -1,0 +1,8 @@
+.admin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content max-content;
+  padding: 32px 96px 0;
+  gap: 32px 96px;
+  /* align-items: flex-start; */
+}

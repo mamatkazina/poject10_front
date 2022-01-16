@@ -1,0 +1,28 @@
+.about__list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(288px, 1fr));
+  grid-gap: 19px;
+}
+
+@media all and (min-width: 768px) {
+  .about__list {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 19px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .about__list {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-gap: 24px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .about__list {
+    grid-template-columns: repeat(auto-fit, 284px);
+    grid-gap: 16px;
+  }
+}

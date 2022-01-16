@@ -1,0 +1,20 @@
+.subtitle__title-H2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media all and (min-width: 768px) {
+  .subtitle__title-H2 {
+    text-align: start;
+    font-size: 38px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .subtitle__title-H2 {
+    text-align: start;
+    font-size: 44px;
+  }
+}

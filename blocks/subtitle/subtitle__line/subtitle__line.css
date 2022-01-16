@@ -1,0 +1,13 @@
+.subtitle__line {
+  width: 90px;
+  height: 0px;
+  /* align-self: center; */
+  border: 2px solid #db8b5b;
+  border-radius: 20%;
+}
+
+@media all and (min-width: 768px) {
+  .subtitle__line {
+    /* align-self: flex-start; */
+  }
+}

@@ -1,0 +1,26 @@
+.outline {
+  background: url(../../../images/line.png) no-repeat;
+  background-size: cover;
+  height: 11vh;
+}
+@media all and (min-width: 768px) {
+  .outline {
+    background: url(../../../images/line.png) no-repeat;
+    background-size: cover;
+    height: 21vh;
+  }
+}
+@media all and (min-width: 1024px) {
+  .outline {
+    background: url(../../../images/line.png) no-repeat;
+    background-size: cover;
+    height: 31vh;
+  }
+}
+@media all and (min-width: 1280px) {
+  .outline {
+    background: url(../../../images/line.png) no-repeat;
+    background-size: cover;
+    height: 37vh;
+  }
+}

@@ -1,0 +1,6 @@
+.admin__frame {
+  padding: 10px;
+  border: 5px solid #db8b5b;
+  min-height: 500px;
+  border-radius: 10px;
+}

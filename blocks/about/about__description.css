@@ -1,0 +1,28 @@
+.about__description {
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 460px;
+  opacity: 0.9;
+  margin: 6px 0 0px 22px;
+}
+@media (min-width: 768px) {
+  .about__description {
+    text-align: start;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 29px;
+    margin: 20px 0px 0px 20px;
+    opacity: 0.9;
+  }
+}
+@media (min-width: 1024px) {
+  .about__description {
+    text-align: start;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    margin: 40px 0px 0px;
+    opacity: 0.9;
+  }
+}

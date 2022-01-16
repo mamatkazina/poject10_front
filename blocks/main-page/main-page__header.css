@@ -1,0 +1,21 @@
+.main-page__header {
+  padding: 16px 16px 130px;
+}
+
+@media all and (min-width: 768px) {
+  .main-page__header {
+    padding: 0 0 100px 24px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main-page__header {
+    padding: 0 0 200px 48px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .main-page__header {
+    padding: 0 0 200px 48px;
+  }
+}

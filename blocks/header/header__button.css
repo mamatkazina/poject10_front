@@ -1,0 +1,37 @@
+.header__button {
+  font-size: 22px;
+  color: white;
+  width: 209px;
+  box-sizing: border-box;
+  border: 5px solid #db8b5b;
+  background-color: #db8b5b;
+  border-radius: 45px;
+  margin: 0;
+  padding: 0;
+  min-height: 45px;
+
+  transition: opacity 0.5s linear;
+  align-self: center;
+}
+
+@media all and (min-width: 768px) {
+  .header__button {
+    font-size: 22px;
+    align-self: start;
+    max-height: 55px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .header__button {
+    font-size: 26px;
+    align-self: start;
+    height: 75px;
+    width: 250px;
+  }
+}
+
+.header__button :hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

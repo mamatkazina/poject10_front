@@ -1,0 +1,76 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/inter.css);
+
+@import url(./blocks/page/page.css);
+@import url(./blocks/title/title.css);
+
+@import url(./blocks/main-page/main-page.css);
+@import url(./blocks/main-page/main-page__header.css);
+@import url(./blocks/main-page/main-page__about.css);
+@import url(./blocks/main-page/main-page__outline.css);
+@import url(./blocks/main-page/main-page__polling.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/header__block.css);
+@import url(./blocks/header/header__title.css);
+@import url(./blocks/header/header__image.css);
+@import url(./blocks/header/header__subtitle.css);
+@import url(./blocks/header/header__button.css);
+
+@import url(./blocks/subtitle/subtitle.css);
+@import url(./blocks/subtitle/subtitle__title-H2.css);
+@import url(./blocks/subtitle/subtitle__line/subtitle__line.css);
+@import url(./blocks/subtitle/subtitle__line/subtitle__line_short.css);
+@import url(./blocks/subtitle/subtitle__line/subtitle__line_long.css);
+@import url(./blocks/subtitle/subtitle__line/wrapper.css);
+
+@import url(./blocks/about/about__list.css);
+@import url(./blocks/about/about__item.css);
+@import url(./blocks/about/about__image.css);
+@import url(./blocks/about/about__description.css);
+
+@import url(./blocks/outline/outline.css);
+
+@import url(./blocks/polling/polling.css);
+@import url(./blocks/polling/polling__block.css);
+@import url(./blocks/polling/polling__form.css);
+@import url(./blocks/polling/polling__submit.css);
+@import url(./blocks/polling/polling__image.css);
+
+@import url(./blocks/first-page/firstpage.css);
+
+@import url(./blocks/list/list.css);
+@import url(./blocks/list/list__button.css);
+@import url(./blocks/list/list__button_open.css);
+@import url(./blocks/list/list__element.css);
+@import url(./blocks/list/list__img.css);
+@import url(./blocks/list/list__img_open.css);
+@import url(./blocks/list/list__open.css);
+@import url(./blocks/list/list__text.css);
+
+@import url(./blocks/map/map.css);
+@import url(./blocks/map/map__button.css);
+@import url(./blocks/map/map__button_back.css);
+@import url(./blocks/map/map__menu.css);
+
+@import url(./blocks/menu/menu.css);
+@import url(./blocks/menu/menu__element.css);
+@import url(./blocks/menu/menu__list.css);
+@import url(./blocks/menu/menu_open.css);
+@import url(./blocks/menu/button/button__img.css);
+@import url(./blocks/menu/button/button__text.css);
+@import url(./blocks/menu/button/button__text_open.css);
+@import url(./blocks/menu/button/buttton__img_open.css);
+@import url(./blocks/menu/button/menu__button/menu__button.css);
+@import url(./blocks/menu/button/menu__button/menu__button_open.css);
+
+@import url(./blocks/secondpage/buttons/submit.css);
+@import url(./blocks/secondpage/page/page__div.css);
+
+@import url(./blocks/admin/admin.css);
+@import url(./blocks/admin/admin__title.css);
+@import url(./blocks/admin/admin__frame.css);
+@import url(./blocks/admin/admin__list-element.css);
+@import url(./blocks/admin/admin__list-button.css);
+@import url(./blocks/admin/admin__input.css);
+@import url(./blocks/admin/admin__submit.css);

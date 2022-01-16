@@ -1,0 +1,11 @@
+.button__text_open {
+  display: block;
+}
+
+.button__text_open:hover {
+  color: #db8b5b;
+}
+
+.button__text_open:focus {
+  color: #db8b5b;
+}

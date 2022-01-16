@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>школьный проект2</title>
+    <link rel="stylesheet" href="./../index.css" />
+  </head>
+
+  <body class="firstpage">
+    <header class="header firstpage__header"></header>
+
+    <main>
+      <section class="map">
+        <div class="menu map__menu">
+          <ul class="menu__list">
+            <li class="menu__element">
+              <button
+                type="button"
+                class="menu__button"
+                aria-label="Любимые места"
+                id="favouritePl"
+              >
+                <span class="button__text">Любимые места</span>
+                <img class="button__img" src="./../images/favPl.png" />
+              </button>
+
+              <ul class="list" id="fpList">
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button fp"
+                    aria-label="Театр"
+                  >
+                    <span class="list__text">театр</span>
+
+                    <!-- <img class="list__img" src="./../images/place.png" /> -->
+                  </button>
+                </li>
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button fp"
+                    aria-label="Кино"
+                  >
+                    <span class="list__text">кино</span>
+                  </button>
+                </li>
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button fp"
+                    aria-label="Конверсейшн"
+                  >
+                    <span class="list__text">конверсейшн</span>
+                  </button>
+                </li>
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button fp"
+                    aria-label="Большая Никитская"
+                  >
+                    <span class="list__text">большая Никитская</span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__element">
+              <button
+                type="button"
+                class="menu__button"
+                aria-label="Маршруты"
+                id="routes"
+              >
+                <span class="button__text">Маршруты</span>
+                <img class="button__img" src="./../images/route.png" />
+              </button>
+
+              <ul class="list" id="RouteList">
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button rt"
+                    aria-label="исторический"
+                  >
+                    <span class="list__text">Исторический</span>
+                  </button>
+                </li>
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button rt"
+                    aria-label="по паркам"
+                  >
+                    <span class="list__text">по паркам</span>
+                  </button>
+                </li>
+                <li class="list__element">
+                  <button
+                    type="button"
+                    class="list__button rt"
+                    aria-label="центр Москвы"
+                  >
+                    <span class="list__text">центр Москвы</span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu__element">
+              <button type="button" class="menu__button" aria-label="Трекер">
+                <span class="button__text">Трекер</span>
+                <img class="button__img" src="./../images/trak.png" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="map__button" aria-label="Трекер"></button>
+      </section>
+    </main>
+    <script src="./../scripts/index.js"></script>
+    <script src="./../scripts/indexpage1.js"></script>
+  </body>
+</html>

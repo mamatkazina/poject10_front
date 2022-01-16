@@ -1,0 +1,16 @@
+.list__text {
+  color: white;
+}
+
+.list__text:hover {
+  color: #db8b5b;
+  cursor: pointer;
+}
+
+.list__text:focus {
+  color: #db8b5b;
+}
+
+.list__text::before {
+  content: U + 2b29;
+}

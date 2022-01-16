@@ -1,0 +1,15 @@
+.about__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  align-content: space-between;
+  width: 100%;
+}
+
+@media all and (min-width: 1024px) {
+  .about__item {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

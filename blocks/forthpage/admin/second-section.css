@@ -1,0 +1,9 @@
+.second-section {
+  margin-top: 100px;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: start;
+  width: 400px;
+  height: 700px;
+}

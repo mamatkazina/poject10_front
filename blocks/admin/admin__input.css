@@ -1,0 +1,21 @@
+.admin__input {
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 3px solid #db8b5b;
+  margin: 0 0 16px 0;
+  padding: 0 0 10px 30px;
+  background-color: #1e272c;
+  border-radius: 2px;
+  color: white;
+}
+
+.admin__input:last-child {
+  margin: 0;
+  margin-bottom: 100px;
+}
+@media all and (min-width: 1024px) {
+  .admin__input {
+    width: 403px;
+    height: 64px;
+  }
+}
