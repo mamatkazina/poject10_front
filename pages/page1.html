@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>школьный проект2</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="./../index.css" />
   </head>
 
@@ -29,12 +30,7 @@
             </li>
 
             <li class="menu__element">
-              <button
-                type="button"
-                class="menu__button"
-                aria-label="Маршруты"
-                id="routes"
-              >
+              <button type="button" class="menu__button" aria-label="Маршруты" id="routes">
                 <span class="button__text">Маршруты</span>
                 <img class="button__img" src="../images/route.png" />
               </button>
@@ -43,12 +39,7 @@
             </li>
 
             <li class="menu__element">
-              <button
-                type="button"
-                class="menu__button"
-                aria-label="Трекер"
-                id="track"
-              >
+              <button type="button" class="menu__button" aria-label="Трекер" id="track">
                 <span class="button__text">Трекер</span>
                 <img class="button__img" src="./../images/trak.png" />
               </button>
@@ -68,6 +59,7 @@
         </div>
 
         <button type="button" class="map__button" aria-label="Трекер"></button>
+        <div id="map" class="map__map"></div>
       </section>
 
       <div class="map__popup map__popup_hidden" id="mapForm">
@@ -127,6 +119,8 @@
         </form>
       </div>
     </main>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <script type="module" src="../scripts/map.js"></script>
     <script type="module" src="../scripts/indexpage1.js"></script>
   </body>
 </html>
