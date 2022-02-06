@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div class="admin__section">
+        <div class="admin__section admin__section_flex">
           <input
             id="1"
             type="text"
@@ -39,7 +39,7 @@
             value=""
             autocomplete="off"
           />
-          <input
+          <!-- <input
             id="3"
             type="text"
             class="admin__input"
@@ -47,7 +47,12 @@
             required
             value=""
             autocomplete="off"
-          />
+          /> -->
+
+          <select name="typeRoutesId" class="admin__select">
+            <option class="admin__select_option" selected>type route id</option>
+          </select>
+
           <input
             id="4"
             type="text"
@@ -75,8 +80,19 @@
             value=""
             autocomplete="off"
           />
+          <input
+            id="7"
+            type="text"
+            class="admin__input"
+            placeholder="Иконка"
+            required
+            value=""
+            autocomplete="off"
+          />
 
           <button type="submit" class="admin__submit">Сохранить</button>
+          <!-- <button type="button" class="admin__add"></button>
+          <button type="button" class="admin__create">Добавить</button> -->
         </div>
       </section>
     </main>

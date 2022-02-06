@@ -1,0 +1,10 @@
+.popup__delete {
+  border: 0;
+  border: 2px solid #db8b5b;
+  margin: 0 0 16px 22px;
+  background-color: #1e272c;
+  border-radius: 10px;
+  color: hsl(22, 64%, 61%);
+  width: 180px;
+  height: 35px;
+}

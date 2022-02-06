@@ -1,21 +1,21 @@
-.main-page__outline {
+.page__outline {
   padding: 0 0 80px;
 }
 
 @media all and (min-width: 768px) {
-  .main-page__outline {
+  .page__outline {
     padding: 0 0 100px;
   }
 }
 
 @media all and (min-width: 1024px) {
-  .main-page__outline {
+  .page__outline {
     padding: 0 0 200px;
   }
 }
 
 @media all and (min-width: 1280px) {
-  .main-page__outline {
+  .page__outline {
     padding: 0 0 200px;
   }
 }

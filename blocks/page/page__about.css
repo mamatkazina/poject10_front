@@ -1,21 +1,21 @@
-.main-page__polling {
-  padding: 0 16px 130px;
+.page__about {
+  padding: 0 16px 80px;
 }
 
 @media all and (min-width: 768px) {
-  .main-page__polling {
+  .page__about {
     padding: 0 24px 100px;
   }
 }
 
 @media all and (min-width: 1024px) {
-  .main-page__polling {
+  .page__about {
     padding: 0 48px 200px;
   }
 }
 
 @media all and (min-width: 1280px) {
-  .main-page__polling {
+  .page__about {
     padding: 0 48px 200px;
   }
 }

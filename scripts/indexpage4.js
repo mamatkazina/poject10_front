@@ -7,62 +7,106 @@ const api = new Api({
   },
 });
 
-let elements = document.querySelectorAll(".list__element");
-let buttons = document.querySelectorAll(".list__button");
-let text, id, about;
+let list = document.querySelector(".admin__list");
+
 let nameOf = document.getElementById("1");
 let idOf = document.getElementById("2");
 let aboutOf = document.getElementById("3");
-let submit = document.querySelector(".form__button");
-let add = document.querySelector(".alone");
-let parent = document.querySelector(".list");
+let colorOf = document.getElementById("4");
 
-for (let item of elements) {
-  item.insertAdjacentHTML(
-    "beforeEnd",
-    '<button class="list__button-img"></button>'
-  );
+let submit = document.querySelector(".admin__submit");
 
-  item.lastChild.onclick = function () {
-    item.remove();
-  };
+function reload() {
+  api
+    .listTypeRoutes()
+    .then((data) => {
+      const typeRouteslist = data;
+
+      typeRouteslist.forEach((element) => {
+        let li = document.createElement("li");
+        li.setAttribute("class", "admin__list-element");
+        li.setAttribute("data-id", element.id);
+        li.setAttribute("data-name", element.name);
+        li.setAttribute("data-about", element.about);
+        li.setAttribute("data-color", element.color);
+
+        let span = document.createElement("span");
+        span.setAttribute("class", "list__text");
+        span.innerText = element.name;
+        li.appendChild(span);
+
+        let button = document.createElement("button");
+        button.setAttribute("class", "button admin__list-button");
+        li.appendChild(button);
+
+        li.addEventListener("click", clickListElement);
+        list.appendChild(li);
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {});
 }
 
-for (let i of buttons) {
-  i.onclick = function () {
-    // text = i.getAttribute("aria-label");
-    // id = i.getAttribute("id");
-    // about = i.getAttribute("about");
-    // nameOf.value = text;
-    // idOf.value = id;
-    // aboutOf.value = about;
-
-    nameOf.value = i.dataset.name;
-    idOf.value = i.dataset.id;
-    aboutOf.value = i.dataset.about;
-  };
-}
-
-function change(e) {
-  for (let i of buttons) {
-    if (idOf.value == i.dataset.id) {
-      buttons[0].innerHTML = nameOf.value;
-    } else {
-      let li = document.createElement("li");
-      li.setAttribute("class", "list__element");
-
-      parent.appendChild(li);
-    }
+function clickListElement(e) {
+  if (e.target.localName == "button") {
+    api
+      .deleteTypeRoutes(e.currentTarget.dataset.id)
+      .then((data) => {
+        // e.currentTarget.remove();
+        //reload();
+        location.reload();
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {});
+  } else {
+    nameOf.value = e.currentTarget.dataset.name;
+    idOf.value = e.currentTarget.dataset.id;
+    aboutOf.value = e.currentTarget.dataset.about;
+    colorOf.value = e.currentTarget.dataset.color;
   }
-
-  // и тут в  будущем заменить остальные через апи
 }
 
-function create() {
-  nameOf.value = "";
-  idOf.value = "";
-  aboutOf.value = "";
+function save(e) {
+  let routes = {};
+
+  routes.id = idOf.value;
+  routes.name = nameOf.value;
+  routes.about = aboutOf.value;
+  routes.color = colorOf.value;
+
+  if (idOf.value == "") {
+    routes.id = 0;
+    api
+      .newTypeRoutes(routes)
+      .then((data) => {
+        //reload();
+        location.reload();
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {});
+  } else {
+    api
+      .editTypeRoutes(routes)
+      .then((data) => {
+        location.reload();
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        nameOf.value = "";
+        idOf.value = "";
+        aboutOf.value = "";
+        colorOf.value = "";
+      });
+  }
 }
 
-submit.addEventListener("click", change);
-add.addEventListener("click", create);
+reload();
+submit.addEventListener("click", save);

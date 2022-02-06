@@ -1,43 +1,25 @@
-.polling__submit {
-  font-size: 18px;
-  /* box-sizing: border-box; */
-  border: 5px solid #db8b5b;
-  background-color: #db8b5b;
-  border-radius: 45px;
-  margin: 0px 0 39px 0;
-  padding: 5px 10px;
-  width: 250px;
-  height: 50px;
-
+.page__div_href {
   text-decoration: none;
   display: inline-block;
+  padding: 5px 10px;
   letter-spacing: 1px;
+  margin: 0 20px;
+  font-size: 24px;
   font-family: "Fredoka One", cursive;
   transition: 0.3s ease-in-out;
 }
 
-.polling__submit {
+.page__div_href {
   background-image: linear-gradient(white 50%, white 50%),
     linear-gradient(rgb(235, 12, 12) 50%, rgb(182, 36, 36) 50%);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 0 2px, 100% 2px;
   color: #1e272c;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   transition: 0.5s ease-in-out;
 }
-
-@media all and (min-width: 1024px) {
-  .polling__submit {
-    font-size: 24px;
-    height: 70px;
-    width: 403px;
-  }
-}
-
-.polling__submit :hover {
-  cursor: pointer;
-  /* opacity: 0.6; */
+.page__div_href :hover {
   background-size: 100% 2px, 100% 2px;
   color: #1e272c;
 }

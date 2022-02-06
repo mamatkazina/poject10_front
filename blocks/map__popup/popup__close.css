@@ -1,0 +1,9 @@
+.popup__close {
+  align-self: flex-end;
+  background-image: url(../../images/stop.svg);
+  background-color: rgba(30, 39, 44, 0.9);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  margin-bottom: 20px;
+}

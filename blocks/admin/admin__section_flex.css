@@ -1,0 +1,5 @@
+.admin__section_flex {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}

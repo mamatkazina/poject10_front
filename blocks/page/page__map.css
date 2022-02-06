@@ -1,7 +1,8 @@
-.main-page {
+.page__map {
+  background-image: url("../../images/map.jpg");
+  margin: 0;
   min-width: 320px;
   max-width: 1280px;
-  margin: 0 auto;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   background-color: #1e272c;
 }

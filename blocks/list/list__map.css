@@ -1,11 +1,9 @@
-.list__open {
+.list__map {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  list-style: none;
   align-items: flex-start;
-  padding: 0;
-  margin: 0;
+  background-color: #1e272c;
 }
 
 /* .list__open :last-of-type {

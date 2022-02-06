@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1-админ-1</title>
-    <link rel="stylesheet" href="./../index.css" />
+    <link rel="stylesheet" href="../index.css" />
   </head>
 
   <body class="page">
@@ -12,136 +12,56 @@
 
     <main>
       <section class="admin">
+        <h1 class="title admin__title">ТиПы МаРшРуТоВ</h1>
+        <div></div>
         <div class="admin__section">
-          <h1 class="title">ТиПы МаРшРуТоВ</h1>
-
           <div class="admin__frame">
-            <ul class="list">
-              <li class="list__element">
-                <button
-                  data-id="1"
-                  data-name="основные достопримечательности"
-                  data-about="основные достопримечательности основные достопримечательности основные достопримечательности"
-                  type="button"
-                  class="list__button"
-                  aria-label="основные достопримечательности"
-                >
-                  <span class="list__text">основные достопримечательности</span>
-                </button>
-
-                <!-- <button
-                  type="button"
-                  class="list__button-img"
-                  aria-label="крестик"
-                >
-                  <img class="list__img" src="./images/stop.png" />
-                </button> -->
-              </li>
-              <li class="list__element">
-                <button
-                  data-id="2"
-                  data-name="исторические маршруты"
-                  data-about="описание второго маршрута"
-                  type="button"
-                  class="list__button"
-                  aria-label="исторические маршруты"
-                >
-                  <span class="list__text">исторические маршруты</span>
-                </button>
-
-                <!-- <button
-                  type="button"
-                  class="list__button-img"
-                  aria-label="крестик"
-                >
-                  <img class="list__img" src="./images/stop.png" />
-                </button> -->
-              </li>
-              <li class="list__element">
-                <button
-                  data-id="3"
-                  type="button"
-                  class="list__button"
-                  aria-label="современные маршруты"
-                >
-                  <span class="list__text">современные маршруты</span>
-                </button>
-
-                <!-- <button
-                  type="button"
-                  class="list__button-img"
-                  aria-label="крестик"
-                >
-                  <img class="list__img" src="./images/stop.png" />
-                </button> -->
-              </li>
-              <li class="list__element">
-                <button
-                  data-id="4"
-                  type="button"
-                  class="list__button"
-                  aria-label="прогулки в парках"
-                >
-                  <span class="list__text">прогулки в парках</span>
-                </button>
-                <!-- 
-                <button
-                  type="button"
-                  class="list__button-img"
-                  aria-label="крестик"
-                >
-                  <img class="list__img" src="./images/stop.png" />
-                </button> -->
-              </li>
-            </ul>
+            <ul class="list admin__list"></ul>
           </div>
         </div>
 
         <div class="admin__section">
           <input
-            type="text"
             id="1"
-            class="input"
-            name="place"
+            type="text"
+            class="admin__input"
             placeholder="Название"
             required
             value=""
-            minlength="2"
-            maxlength="30"
-            about="later1"
             autocomplete="off"
           />
           <input
             id="2"
             type="text"
-            class="input"
-            name="id"
+            class="admin__input"
             placeholder="Id"
             required
             value=""
-            about="later2"
             autocomplete="off"
           />
           <input
-            type="text"
             id="3"
-            class="input"
-            name="place"
+            type="text"
+            class="admin__input"
             placeholder="Описание"
             required
             value=""
-            minlength="2"
-            maxlength="30"
-            about="later3"
+            autocomplete="off"
+          />
+          <input
+            id="4"
+            type="text"
+            class="admin__input"
+            placeholder="Цвет маршрута"
+            required
+            value=""
             autocomplete="off"
           />
 
-          <button type="submit" class="form__button">Сохранить</button>
+          <button type="submit" class="admin__submit">Сохранить</button>
         </div>
-
-        <button type="add" class="form__button alone">Добавить</button>
       </section>
     </main>
-    <script src="./../scripts/indexpage4.js"></script>
+    <script type="module" src="../scripts/indexpage4.js"></script>
   </body>
 </html>

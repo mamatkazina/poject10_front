@@ -48,7 +48,7 @@ export default class Api {
     }).then(this._getResponseData);
   }
 
-  editFavouritePlace(fpId, fp) {
+  editFavouritePlace(fp) {
     return fetch(this._baseUrl + "/favourites/" + fpId, {
       method: "PUT",
       headers: this._headers,
@@ -91,6 +91,44 @@ export default class Api {
       method: "PUT",
       headers: this._headers,
       body: JSON.stringify(route),
+    }).then(this._getResponseData);
+  }
+
+  //Блок обработки типов маршрутов
+  listTypeRoutes() {
+    return fetch(this._baseUrl + "/typeRoutes", {
+      method: "GET",
+      headers: this._headers,
+    }).then(this._getResponseData);
+  }
+
+  showTypeRoutes(typerouteId) {
+    return fetch(this._baseUrl + "/typeRoutes/" + typerouteId, {
+      method: "GET",
+      headers: this._headers,
+    }).then(this._getResponseData);
+  }
+
+  newTypeRoutes(troute) {
+    return fetch(this._baseUrl + "/typeRoutes", {
+      method: "POST",
+      headers: this._headers,
+      body: JSON.stringify(troute),
+    }).then(this._getResponseData);
+  }
+
+  deleteTypeRoutes(typerouteId) {
+    return fetch(this._baseUrl + "/typeRoutes/" + typerouteId, {
+      method: "DELETE",
+      headers: this._headers,
+    }).then(this._getResponseData);
+  }
+
+  editTypeRoutes(troute) {
+    return fetch(this._baseUrl + "/typeRoutes/" + troute.id, {
+      method: "PUT",
+      headers: this._headers,
+      body: JSON.stringify(troute),
     }).then(this._getResponseData);
   }
 }
