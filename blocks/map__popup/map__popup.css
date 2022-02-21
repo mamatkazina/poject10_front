@@ -1,12 +1,14 @@
 .map__popup {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: flex-start;
-  background-color: #1e272c;
+  background-color: rgba(30, 39, 44, 0.88);
   width: 300px;
-  height: 300px;
+  min-height: 239px;
   position: absolute;
   top: 30%;
   right: 40%;
+  border-radius: 15px;
+  padding-top: 39px;
 }

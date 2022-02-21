@@ -1,10 +1,12 @@
-.popup__submit {
+.popup__button {
   border: 0;
   border: 1px solid #db8b5b;
-  margin: 0px 0 8px 18px;
+  margin: 0px 18px 10px 18px;
   background-color: rgba(30, 39, 44, 0.5);
   border-radius: 10px;
   color: hsl(22, 64%, 61%);
   width: 160px;
   height: 30px;
+  position: relative;
+  bottom: 0;
 }

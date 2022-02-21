@@ -1,14 +1,14 @@
 .popup__input {
   box-sizing: border-box;
   border: 0;
-  border-bottom: 2px solid #db8b5b;
+  border-bottom: 1px solid #db8b5b;
   margin: 0 35px 16px 15px;
   padding: 0 0 10px 15px;
-  background-color: #1e272c;
-  border-radius: 2px;
+  background-color: rgba(30, 39, 44, 0.5);
+  border-radius: 8px;
   color: white;
-  width: 250px;
-  height: 30px;
+  width: 270px;
+  height: 40px;
 }
 
 .popup__input:last-child {

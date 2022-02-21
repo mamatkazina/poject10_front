@@ -49,7 +49,7 @@ export default class Api {
   }
 
   editFavouritePlace(fp) {
-    return fetch(this._baseUrl + "/favourites/" + fpId, {
+    return fetch(this._baseUrl + "/favourites/" + fp.id, {
       method: "PUT",
       headers: this._headers,
       body: JSON.stringify(fp),

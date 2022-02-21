@@ -10,6 +10,7 @@
 .map {
   display: grid;
   align-items: flex-start;
-  grid-template-columns: min-content min-content 1fr;
+  grid-template-columns: max-content min-content;
   column-gap: 24px;
+  z-index: 10;
 }

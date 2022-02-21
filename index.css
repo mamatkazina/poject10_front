@@ -53,6 +53,7 @@
 @import url(./blocks/map/map__button.css);
 @import url(./blocks/map/map__button_back.css);
 @import url(./blocks/map/map__menu.css);
+@import url(./blocks/map/map__map.css);
 
 @import url(./blocks/menu/menu.css);
 @import url(./blocks/menu/menu__element.css);
@@ -82,10 +83,30 @@
 
 @import url(./blocks/map__popup/map__popup.css);
 @import url(./blocks/map__popup/map__popup_hidden.css);
-@import url(./blocks/map__popup/popup__close.css);
-@import url(./blocks/map__popup/popup__delete.css);
+@import url(./blocks/map__popup/popup__button.css);
 @import url(./blocks/map__popup/popup__input.css);
 @import url(./blocks/map__popup/popup__submit.css);
+@import url(./blocks/map__popup/form-container.css);
+@import url(./blocks/map__popup/popup__delete_hidden.css);
+@import url(./blocks/map__popup/popup__add_hidden.css);
+@import url(./blocks/map__popup/popup__textarea.css);
+@import url(./blocks/map__popup/popup__edit_hidden.css);
+@import url(./blocks/map__popup/popup__submit_hidden.css);
 
 @import url(./blocks/datepicker/datepicker.css);
 @import url(./blocks/datepicker/datepicker_visible.css);
+
+/*Это костыли*/
+.mapboxgl-popup-content {
+  background: transparent;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: transparent;
+}
+
+.mapboxgl-popup-close-button {
+  top: -8px;
+  font-size: 50px;
+  color: #db8b5b;
+}

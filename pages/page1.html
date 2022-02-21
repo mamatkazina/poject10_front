@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>школьный проект2</title>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./../index.css" />
   </head>
 
@@ -12,6 +15,7 @@
     <header class=""></header>
 
     <main>
+      <div id="map" class="map__map"></div>
       <section class="map">
         <div class="menu map__menu">
           <ul class="menu__list">
@@ -30,7 +34,12 @@
             </li>
 
             <li class="menu__element">
-              <button type="button" class="menu__button" aria-label="Маршруты" id="routes">
+              <button
+                type="button"
+                class="menu__button"
+                aria-label="Маршруты"
+                id="routes"
+              >
                 <span class="button__text">Маршруты</span>
                 <img class="button__img" src="../images/route.png" />
               </button>
@@ -39,7 +48,12 @@
             </li>
 
             <li class="menu__element">
-              <button type="button" class="menu__button" aria-label="Трекер" id="track">
+              <button
+                type="button"
+                class="menu__button"
+                aria-label="Трекер"
+                id="track"
+              >
                 <span class="button__text">Трекер</span>
                 <img class="button__img" src="./../images/trak.png" />
               </button>
@@ -59,65 +73,158 @@
         </div>
 
         <button type="button" class="map__button" aria-label="Трекер"></button>
-        <div id="map" class="map__map"></div>
       </section>
 
-      <div class="map__popup map__popup_hidden" id="mapForm">
-        <button type="button" class="popup__close"></button>
-        <form class="form-container" id="">
-          <input
-            id="1"
-            type="text"
-            class="popup__input"
-            placeholder="Название"
-            required
-            value=""
-            autocomplete="off"
-          />
+      <template id="popup">
+        <div class="map__popup" id="mapForm">
+          <form class="form-container" id="">
+            <input
+              id="popupName"
+              type="text"
+              class="popup__input"
+              placeholder="Название"
+              readonly="true"
+              required
+              value=""
+              autocomplete="off"
+            />
 
-          <input
-            id="2"
-            type="text"
-            class="popup__input"
-            placeholder="Описание"
-            required
-            value=""
-            autocomplete="off"
-          />
+            <textarea
+              id="popupAbout"
+              type="text"
+              readonly="true"
+              class="popup__input popup__textarea"
+              placeholder="Описание"
+              required
+              value=""
+              autocomplete="off"
+              rows="4"
+            ></textarea>
 
-          <input
-            id="3"
-            type="hidden"
-            class="popup__input"
-            placeholder="айди"
-            required
-            value=""
-            autocomplete="off"
-          />
+            <input
+              id="popupId"
+              type="hidden"
+              class="popup__input"
+              placeholder="айди"
+              required
+              value=""
+              autocomplete="off"
+            />
 
-          <input
-            id="4"
-            type="hidden"
-            class="popup__input"
-            placeholder="цвет"
-            required
-            value=""
-            autocomplete="off"
-          />
-          <input
-            id="5"
-            type="hidden"
-            class="popup__input"
-            placeholder="цвет"
-            required
-            value=""
-            autocomplete="off"
-          />
+            <input
+              id="popupGeom"
+              type="hidden"
+              class="popup__input"
+              placeholder="geom"
+              required
+              value=""
+              autocomplete="off"
+            />
 
-          <button type="submit" class="popup__submit">Сохранить</button>
-          <button type="submit" class="popup__delete">Удалить</button>
-        </form>
-      </div>
+            <button type="button" class="popup__submit popup__submit_hidden">
+              Сохранить
+            </button>
+            <button
+              type="button"
+              class="popup__delete popup__button popup__delete_hidden"
+            >
+              Удалить
+            </button>
+            <button type="button" class="popup__edit popup__button">
+              Редактировать
+            </button>
+          </form>
+        </div>
+      </template>
+
+      <template id="createNewPopup">
+        <div class="map__popup" id="mapForm">
+          <form class="form-container" id="">
+            <input
+              id="popupName"
+              type="text"
+              class="popup__input"
+              placeholder="Название"
+              required
+              value=""
+              autocomplete="off"
+            />
+
+            <textarea
+              id="popupAbout"
+              type="text"
+              class="popup__input popup__textarea"
+              placeholder="Описание"
+              required
+              value=""
+              autocomplete="off"
+              rows="4"
+            ></textarea>
+
+            <button type="button" class="popup__add popup__button">
+              Добавить
+            </button>
+          </form>
+        </div>
+      </template>
+
+      <template id="linePopup">
+        <div class="map__popup" id="mapForm">
+          <form class="form-container" id="">
+            <input
+              id="linePopupName"
+              type="text"
+              class="popup__input"
+              placeholder="Название"
+              readonly="true"
+              required
+              value=""
+              autocomplete="off"
+            />
+
+            <textarea
+              id="linePopupAbout"
+              type="text"
+              readonly="true"
+              class="popup__input popup__textarea"
+              placeholder="Описание"
+              required
+              value=""
+              autocomplete="off"
+              rows="4"
+            ></textarea>
+
+            <input
+              id="linePopupId"
+              type="hidden"
+              class="popup__input"
+              placeholder="айди"
+              required
+              value=""
+              autocomplete="off"
+            />
+
+            <input
+              id="linePopupColor"
+              type="hidden"
+              class="popup__input"
+              placeholder="цвет"
+              required
+              value=""
+              autocomplete="off"
+            />
+            <input
+              id="linePopupGeom"
+              type="hidden"
+              class="popup__input"
+              placeholder="geom"
+              required
+              value=""
+              autocomplete="off"
+            />
+          </form>
+        </div>
+      </template>
     </main>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
     <script type="module" src="../scripts/map.js"></script>
